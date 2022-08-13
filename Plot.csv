@@ -1,0 +1,11 @@
+Days,Sales,Profit,Discount,Segment
+1,1,2,3,Blue
+2,4,6,10,Green
+3,9,12,21,Blue
+4,16,20,36,Red
+5,25,30,55,Green
+6,36,42,78,Blue
+7,49,56,105,Red
+8,64,72,136,Red
+9,81,90,171,Blue
+10,100,110,210,Green
