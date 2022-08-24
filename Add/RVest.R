@@ -6,3 +6,4 @@ heading = html_node(webpage, 'title')
 # Converting the heading data to text
 text = html_text(heading)
 print(text)
+class(text)
