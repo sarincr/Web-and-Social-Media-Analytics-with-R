@@ -81,3 +81,12 @@ typeof(tbls_xml)
 ## [1] "list"
 
 length(tbls_xml)
+
+
+
+x <- read_html("https://www.amazon.in/gp/bestsellers/electronics/1805560031")
+
+films <- x %>% html_elements("_cDEzb_p13n-sc-price_3mJ9Z")
+films=html_text(films)
+
+films
