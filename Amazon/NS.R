@@ -1,5 +1,6 @@
 library(rvest)
 library(readr)
+
 x <- read_html("https://www.amazon.in/gp/bestsellers/electronics/1805560031")
 x
 y <- x%>% html_elements("._cDEzb_p13n-sc-price_3mJ9Z")
@@ -17,6 +18,5 @@ m=parse_number(df$z)
 m
 dfn=data.frame(m,ad1)
 dfn
-
 library(writexl)
 write_xlsx(dfn, "people.xlsx")
