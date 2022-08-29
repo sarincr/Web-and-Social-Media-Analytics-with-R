@@ -1,4 +1,4 @@
-#install.packages("SentimentAnalysis")
+install.packages("SentimentAnalysis")
 library(SentimentAnalysis)
 documents <- c("Wow, I really like the new light sabers!",
                "That book was excellent.",
