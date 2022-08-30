@@ -14,6 +14,7 @@ text <- readLines(filePath)
 text
 docs <- Corpus(VectorSource(text))
 docs
+print(docs)
 toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
 docs <- tm_map(docs, toSpace, "/")
 docs
@@ -46,3 +47,4 @@ set.seed(1234)
 wordcloud(words = d$word, freq = d$freq, min.freq = 1,
           max.words=200, random.order=FALSE, rot.per=0.35, 
           colors=brewer.pal(8, "Dark2"))
+
